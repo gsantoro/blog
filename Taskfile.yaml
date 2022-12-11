@@ -10,3 +10,7 @@ tasks:
   publish:
     cmds:
       - hugo
+
+  theme:
+    cmds:
+      - git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
