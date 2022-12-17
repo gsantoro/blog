@@ -3,6 +3,10 @@
 version: '3'
 
 tasks:
+  default:
+    cmds:
+      - task: dev
+
   dev:
     cmds:
       - hugo serve --disableFastRender
@@ -14,3 +18,4 @@ tasks:
   theme:
     cmds:
       - git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
+      
