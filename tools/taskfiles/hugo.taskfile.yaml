@@ -17,7 +17,7 @@ tasks:
 
   theme:
     cmds:
-      - git submodule add -f https://github.com/dillonzq/LoveIt.git themes/LoveIt
+      - git submodule add -f https://github.com/gsantoro/LoveIt.git themes/LoveIt
 
   open:
     cmds:
