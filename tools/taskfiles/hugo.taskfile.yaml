@@ -11,6 +11,10 @@ tasks:
     cmds:
       - hugo serve --disableFastRender --buildDrafts
 
+  prod:
+    cmds:
+      - hugo serve
+
   publish:
     cmds:
       - hugo
