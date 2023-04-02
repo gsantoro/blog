@@ -1,7 +1,12 @@
 ---
 title: "Tips for CKA exam"
 date: 2023-04-02T17:16:19+01:00
-draft: true
+draft: false
+tags:
+- Kubernetes
+- DevOps
+- CKA
+- Exam
 ---
 
 ## Environment setup
