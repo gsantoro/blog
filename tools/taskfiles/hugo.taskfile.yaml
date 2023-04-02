@@ -1,0 +1,31 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task: dev
+
+  dev:
+    cmds:
+      - hugo serve --disableFastRender --buildDrafts
+
+  publish:
+    cmds:
+      - hugo
+
+  theme:
+    cmds:
+      - git submodule add -f https://github.com/dillonzq/LoveIt.git themes/LoveIt
+
+  open:
+    cmds:
+      - open http://localhost:1313/
+
+  post:
+    cmds:
+      - hugo new posts/{{.TIMESTAMP}}.md
+    vars:
+      TIMESTAMP:
+        sh: date +%Y%m%d%H%M%S

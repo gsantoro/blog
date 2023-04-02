@@ -1,3 +1,6 @@
-themes
 public
 resources/_gen
+# Devenv
+.devenv*
+devenv.local.nix
+.direnv

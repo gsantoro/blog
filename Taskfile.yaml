@@ -2,20 +2,11 @@
 
 version: '3'
 
+includes:
+  env: tools/taskfiles/env.taskfile.yaml
+  hugo: tools/taskfiles/hugo.taskfile.yaml
+  devenv: tools/taskfiles/devenv.taskfile.yaml
+
 tasks:
-  default:
-    cmds:
-      - task: dev
-
-  dev:
-    cmds:
-      - hugo serve --disableFastRender
-
-  publish:
-    cmds:
-      - hugo
-
-  theme:
-    cmds:
-      - git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
-      
+  default:  
+    - task: hugo
