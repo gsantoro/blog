@@ -35,7 +35,7 @@ I recently passed my CKA exam and I would like to share with you some tips that 
 - [Official doc](https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/taking-the-exam)
 - [Exam rules and policies](https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-rules-and-policies)
 	- No food
-	- Only clear liquids from a clear glass or clear bottle
+	- Only clear liquids from clear glass or clear bottle
 	- No speaking
 - You can click on the `Launch exam` up to 30 minutes before the scheduled start. 
 - After you click on `Launch Exam`:
@@ -58,15 +58,15 @@ I recently passed my CKA exam and I would like to share with you some tips that 
 	- add the alias `alias kn='f() { [ "$1" ] && kubectl config set-context --current --namespace $1 || kubectl config view --minify | grep namespace | cut -d" " -f6 ; } ; f'` and use it via `kn <namespace>`
 - When writing a manifest for a question use the file format `<question number>.<resource>.yaml` . For example `1.pod.yaml` to store a manifest for a pod for question number 1. This way you can leave a question partially answered and go back to it later. 
 - Before editing a manifest provided by the environment, `back it up` first with the file format `<question number>.manifest.yaml.bak` so that you can map the manifest to the question.
-- If you are asked to create bash scripts do not bother adding the `shebang` sequence `#!/usr/bin/env bash` or add execution permissions via chmod. This is a waste of time, since scripts will be executed via `sh script.sh` 
-- `Official documentation` links are provided for each question with the question description. This will save you from searching the relevant page yourself. Unfortunately you might not being able to find the most relevant documentation in those provided links
+- If you are asked to create bash scripts do not bother adding the `shebang` sequence `#!/usr/bin/env bash` or add execution permissions via chmod. This is a waste of time since scripts will be executed via `sh script.sh` 
+- `Official documentation` links are provided for each question with the question description. This will save you from searching the relevant page yourself. Unfortunately, you might not be able to find the most relevant documentation in those provided links
 - The official Kubernetes documentation has `external links` pointing to other domains. Since you are not allowed to browse links other than `kubernetes.io`, and this requirement is currently not enforced via the browser, Before opening a link, point your mouse over the link to inspect the domain in the status bar before opening it. I accidentally opened some external links during my exams but closed them immediately.
 - Useful `documentation pages` to have open in Firefox:
 	- [cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 - You can `flag` a question to go back later in the exam environment
 	- No need to use the provided text editor to remember which questions you skipped or to write them down on a file
-	- Don't get stuck trying answering difficult questions, skip them to solve the easier ones. You can always go back to them
-- The environment provides you with a `calculator and a text editor` for note taking. I didn't use any of that. 
+	- Don't get stuck trying to answer difficult questions, skip them to solve the easier ones. You can always go back to them
+- The environment provides you with a `calculator and a text editor` for note-taking. I didn't use any of that. 
 - Useful keymaps
 	- `SHIFT + CTRL + T` to open a new tab in the terminal
 	- `SHIFT + CTRL + C` and `SHIFT + CTRL + V` to copy and paste
