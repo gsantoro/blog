@@ -14,18 +14,6 @@ I recently passed my CKA exam and I would like to share with you some tips that 
 
 <!--more-->
 
-## Environment setup
-- Remote Linux desktop
-- Firefox Browser
-- [kubectl autocomplete](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#kubectl-autocomplete) is already configured
-- aliases already configured
-	- `alias k=kubectl`
-- Vim editor already configured. no need to change that)
-	- `set expandtab` use spaces for tab
-	- `set tabstop=2` = 2 spaces for a tab
-	- `set shiftwidth=2`
-- passwordless ssh to other nodes is already configured
-
 ## Booking 
 - You need to allow 24h from when you schedule an exam to when the exam can take place. This includes any possible retakes. Keep that in mind if the expiration date is approaching.
 - A trick that I discovered only after have scheduled my exam. If you start one of the exam simulators, your `due date for the exam will be moved forward of 4 days`. You can use this to get some extra days to study up to the exam.
@@ -51,18 +39,18 @@ I recently passed my CKA exam and I would like to share with you some tips that 
 
 
 ## During the exam
-- Useful aliases/commands to add to `~/.bashrc` so that they are available in any terminal tab
-	- add the command `export do="--dry-run=client -o yaml"` and use it via `k create deploy nginx --image=nginx $do`
-	- add the command `export now="--force --grace-period 0"`  and use it via `k delete pod x $now`
-	- add the alias `alias kx='f() { [ "$1" ] && kubectl config use-context $1 || kubectl config current-context ; } ; f'`  and use it via `kx <context>`
-	- add the alias `alias kn='f() { [ "$1" ] && kubectl config set-context --current --namespace $1 || kubectl config view --minify | grep namespace | cut -d" " -f6 ; } ; f'` and use it via `kn <namespace>`
+- some useful aliases and commands. Bear in mind that:
+	- k=kubectl is already configured
+	- Vim is already configured as above
+	- Kn and KX aliases are available at [cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) (which is part of the official documentation that you are allowed to browse)
+
+	{{<gist gsantoro 05c6f586cc255155139043bb2e16d9df>}}
+
 - When writing a manifest for a question use the file format `<question number>.<resource>.yaml` . For example `1.pod.yaml` to store a manifest for a pod for question number 1. This way you can leave a question partially answered and go back to it later. 
 - Before editing a manifest provided by the environment, `back it up` first with the file format `<question number>.manifest.yaml.bak` so that you can map the manifest to the question.
 - If you are asked to create bash scripts do not bother adding the `shebang` sequence `#!/usr/bin/env bash` or add execution permissions via chmod. This is a waste of time since scripts will be executed via `sh script.sh` 
 - `Official documentation` links are provided for each question with the question description. This will save you from searching the relevant page yourself. Unfortunately, you might not be able to find the most relevant documentation in those provided links
 - The official Kubernetes documentation has `external links` pointing to other domains. Since you are not allowed to browse links other than `kubernetes.io`, and this requirement is currently not enforced via the browser, Before opening a link, point your mouse over the link to inspect the domain in the status bar before opening it. I accidentally opened some external links during my exams but closed them immediately.
-- Useful `documentation pages` to have open in Firefox:
-	- [cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 - You can `flag` a question to go back later in the exam environment
 	- No need to use the provided text editor to remember which questions you skipped or to write them down on a file
 	- Don't get stuck trying to answer difficult questions, skip them to solve the easier ones. You can always go back to them
@@ -70,6 +58,15 @@ I recently passed my CKA exam and I would like to share with you some tips that 
 - Useful keymaps
 	- `SHIFT + CTRL + T` to open a new tab in the terminal
 	- `SHIFT + CTRL + C` and `SHIFT + CTRL + V` to copy and paste
+
+### Environment setup
+- Remote Linux desktop
+- Firefox Browser
+- [kubectl autocomplete](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#kubectl-autocomplete) is already configured
+- vim already setup
+- alias `k=kubectl` already configure
+- passwordless ssh to other nodes is already configured
+
 
 ## Results
 Results are sent back after 24h from the exam starting time via email and via the exam home page
