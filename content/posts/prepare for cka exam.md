@@ -1,7 +1,7 @@
 ---
 title: "Prepare for your CKA exam"
 date: 2023-04-09T09:59:31+01:00
-draft: true
+draft: false
 tags:
 - Kubernetes
 - DevOps
