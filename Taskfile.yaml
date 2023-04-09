@@ -3,9 +3,15 @@
 version: '3'
 
 includes:
-  env: tools/taskfiles/env.taskfile.yaml
-  hugo: tools/taskfiles/hugo.taskfile.yaml
-  devenv: tools/taskfiles/devenv.taskfile.yaml
+  env: tools/taskfiles/env.taskfile.yml
+  github: tools/taskfiles/github.taskfile.yml
+  tasks: tools/taskfiles/tasks.taskfile.yml
+  blog: tools/taskfiles/blog.taskfile.yml
+  
+  hugo: tools/taskfiles/lib/hugo.taskfile.yml
+  devenv: tools/taskfiles/lib/devenv.taskfile.yml
+  magick: tools/taskfiles/lib/magick.taskfile.yml
+  
 
 tasks:
   default:  

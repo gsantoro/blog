@@ -10,9 +10,11 @@ tags:
 
 Tips and tricks to pass the [Certified Kubernetes Administrator exam](https://trainingportal.linuxfoundation.org/learn/course/certified-kubernetes-administrator-cka/exam/exam).
 
-I recently passed my CKA exam and I would like to share with you some tips that might enable you to pass the exam.
+I recently passed my [CKA exam](https://twitter.com/gsantoro15/status/1642572237327745027) and I would like to share with you some tips that might enable you to pass the exam.
 
 <!--more-->
+
+{{< image src="/images/cka.256.jpg" title="Certified Kubernetes administrator" width="256px" >}}
 
 ## Booking 
 - You need to allow 24h from when you schedule an exam to when the exam can take place. This includes any possible retakes. Keep that in mind if the expiration date is approaching.

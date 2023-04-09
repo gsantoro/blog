@@ -4,3 +4,11 @@ resources/_gen
 .devenv*
 devenv.local.nix
 .direnv
+
+
+# download from automation repo
+tools/taskfiles/lib
+
+
+# env variables
+.env
