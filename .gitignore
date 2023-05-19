@@ -11,4 +11,4 @@ tools/taskfiles/lib
 
 
 # env variables
-.env
+.env.private
