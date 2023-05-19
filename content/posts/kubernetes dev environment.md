@@ -27,7 +27,7 @@ I don't remember exactly when I first heard about Docker, but I clearly remember
 
 My first experience with containers involved running Docker Desktop on my MacBook. Kubernetes wasn't even a thing yet. You could run a single container or later on, multiple containers with [Docker Compose](https://docs.docker.com/compose/).
 
-## Docker Swarm, Apache Marathon, AWS ECS and the container orchestration war
+## The container orchestration war
 
 When Docker introduced [Docker Swarm](https://docs.docker.com/engine/swarm/) it looked like you could use containers in production. You could create a cluster of machines and run distributed applications with containers. It looked great but I didn't play with it since I didn't need it for work yet.
 
@@ -53,7 +53,7 @@ If only there was an open-source replacement for Docker, that could have solved 
 
 A couple of years ago I even tried to use [Podman](https://podman.io/) as an alternative to Docker Desktop but the parity between the two wasn't 100% yet so back to Docker Desktop.
 
-## Kubernetes and the End of the container orchestrator war
+## The End of the container orchestrator war
 Since then I didn't get to use Kubernetes in a professional capacity until last year when I joined [Elastic](https://www.elastic.co/) as a Senior Software Engineer in the Cloud Native monitoring team. 
 
 I had to quickly ramp up my knowledge of Kubernetes since I needed to learn how to deploy, configure and run Kubernetes clusters and applications on Kubernetes both on cloud providers and locally for testing. 
@@ -84,8 +84,8 @@ Only recently I discovered a new YouTube channel called [DevOpsToolkit](https://
 
 Since then, I change my mind about using K3d for local development. This happened when I learned that it provides a similar user experience to Kind (meaning you can run a multi-node cluster with Docker containers) but internally it runs K3s, which is a 100% compatible Kubernetes alternative but a lot lighter on the CPU/Memory requirements. K3s achieves this by removing parts of the Kubernetes code that are obsolete and by replacing Etcd with a lighter database alternative.
 
-## Rancher Desktop
-After watching the following video [How To Replace Docker With nerdctl And Rancher Desktop](https://www.youtube.com/watch?v=evWPib0iNgY) on Youtube channel `DevOpsToolkit `, I also learned how you can replace Docker Desktop with an open-source solution called Rancher Desktop. If only this tool was available when I was working in the investment bank, maybe I would still be working there now.
+## Final setup
+After watching the following video [How To Replace Docker With nerdctl And Rancher Desktop](https://www.youtube.com/watch?v=evWPib0iNgY) on Youtube channel [DevOpsToolkit](https://www.youtube.com/@DevOpsToolkit), I also learned how you can replace Docker Desktop with an open-source solution called Rancher Desktop. If only this tool was available when I was working in the investment bank, maybe I would still be working there now.
 
 This video was shot a year ago, since then I am happy to say that Rancher Desktop is now supported on Apple M1 laptops and thanks to [Colima](https://github.com/abiosoft/colima) and [nerdctl](https://github.com/containerd/nerdctl) and a few Linux aliases you can be unaware that Docker is no longer running on your machine.
 
