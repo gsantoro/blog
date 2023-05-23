@@ -5,5 +5,6 @@
   packages = [ 
     pkgs.hugo
     pkgs.imagemagick
+    pkgs.envchain
   ];
 }

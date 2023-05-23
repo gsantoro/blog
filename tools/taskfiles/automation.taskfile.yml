@@ -20,14 +20,6 @@ tasks:
         vars:
           TASK_NAME: hugo
 
-      - task: download
-        vars:
-          TASK_NAME: magick
-      
-      - task: download
-        vars:
-          TASK_NAME: img
-
   download:
     cmds:
       - task: github:download

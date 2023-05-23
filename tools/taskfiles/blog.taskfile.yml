@@ -4,45 +4,44 @@ version: '3'
 
 vars:
   IMAGE_PATH: static/images
-  OUTPUT_SIZE: "128X128"
-
-includes:
-  img: ./lib/img.taskfile.yml
 
 tasks:
   default:
     - task: images
     
+  image-original:
+    cmds:
+      - curl {{.IMAGE_URL}} -o {{.IMAGE_PATH}}/{{.IMAGE_NAME}}.{{.IMAGE_EXTENSION}}
 
   images:
     cmds:
-      - task: img:download_multiple_sizes
+      - task: image-original
         vars:
           IMAGE_URL: https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71hoCvUQ9sL.jpg
           IMAGE_NAME: managing_kubernetes
-          IMAGE_PATH: "{{.IMAGE_PATH}}"
+          IMAGE_EXTENSION: "jpg"
 
-      - task: img:download_multiple_sizes
+      - task: image-original
         vars:
           IMAGE_URL: https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51yBop-tNzL._SX379_BO1,204,203,200_.jpg
           IMAGE_NAME: cloud_native_devops_kubernetes
-          IMAGE_PATH: "{{.IMAGE_PATH}}"
+          IMAGE_EXTENSION: "jpg"
 
-      - task: img:download_multiple_sizes
+      - task: image-original
         vars:
           IMAGE_URL: https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/516FLGwb0VL._SX218_BO1,204,203,200_QL40_ML2_.jpg
           IMAGE_NAME: cka_study_guide
-          IMAGE_PATH: "{{.IMAGE_PATH}}"
+          IMAGE_EXTENSION: "jpg"
 
-      - task: img:download_multiple_sizes
+      - task: image-original
         vars:
           IMAGE_URL: https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/41Rpke8ixmL._SX218_BO1,204,203,200_QL40_ML2_.jpg
           IMAGE_NAME: kubernetes_up_and_running
-          IMAGE_PATH: "{{.IMAGE_PATH}}"
+          IMAGE_EXTENSION: "jpg"
       
-      - task: img:download_multiple_sizes
+      - task: image-original
         vars:
           IMAGE_URL: https://miro.medium.com/v2/resize:fit:600/format:webp/1*1Kn9BL4Q7hWzsJ0nMCNV7g.png
           IMAGE_NAME: cka
-          IMAGE_PATH: "{{.IMAGE_PATH}}"
+          IMAGE_EXTENSION: "png"
       
