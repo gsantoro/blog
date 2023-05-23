@@ -9,15 +9,19 @@ tags:
 - Docker
 ---
 
-In 2023, there are many different ways of configuring your Kubernetes development environment. Some of them are Docker Desktop, Minikube, Kind, K3s and K3d. So which one should you choose? Things get even more complicated if you have an Apple M1 chipset like I do.
-
-Like with everything, "It all depends". I would like to provide here a very opinionated setup that I am currently using.
+TL;DR: I recently uninstalled Docker Desktop entirely from my MacBook and replaced it with Rancher Desktop. 
 
 <!--more-->
 
 {{< image src="/images/containers_sketch.jpeg" title="Containers" width="512px"  >}}
 
-TL;DR: I recently uninstalled Docker Desktop entirely from my MacBook and replaced it with Rancher Desktop. 
+## Intro
+In 2023, there are many different ways of configuring your Kubernetes development environment. Some of them are **Docker Desktop, Minikube, Kind, K3s, and K3d** but the list goes on and on.
+
+So which one should you choose? Things get even more complicated if you have an Apple M1 chipset like I do.
+
+Like with everything, "It all depends". I would like to provide here a very opinionated setup that I am currently using.
+
 
 ## Early days with Docker
 
@@ -35,7 +39,7 @@ Only in late 2016, I first started using container orchestration tools for work.
 
 My company opted for Marathon, so I didn't have the chance to play with Kubernetes for quite a while.
 
-By 2021 when I first started looking into Kubernetes in my personal time, all the online resources, courses and books would suggest you use [Minikube](https://minikube.sigs.k8s.io/). It was supported both on my Linux desktop and my MacBook laptop. It was an easy choice. 
+By 2021 when I first started looking into Kubernetes in my personal time, all the online resources, courses, and books would suggest you use [Minikube](https://minikube.sigs.k8s.io/). It was supported both on my Linux desktop and my MacBook laptop. It was an easy choice. 
 
 I can't remember exactly when I learned that Docker Desktop was able to run Kubernetes, but I never considered that an option since I had adopted already other solutions.
 
@@ -71,7 +75,7 @@ Internally Kind makes this possible by running Kubernetes nodes as Docker contai
 
 This allowed me so much flexibility that I thought I didn't need anything else for a while.
 
-This was the very first time when I realized that the container orchestrator was over and Kubernetes was the absolute winner. All of a sudden it didn't make sense anymore to run docker-compose, ECS Fargate, Docker Swarm or Apache Marathon. Don't get me wrong, the experience I got with those tools was very propaedeutic. Now I can fully appreciate as only having a single container orchestrator standard allows you to focus on other problems at a higher level of abstraction and it allows the ecosystem to thrive.
+This was the very first time when I realized that the container orchestrator was over and Kubernetes was the absolute winner. All of a sudden it didn't make sense anymore to run docker-compose, ECS Fargate, Docker Swarm, or Apache Marathon. Don't get me wrong, the experience I got with those tools was very propaedeutic. Now I can fully appreciate as only having a single container orchestrator standard allows you to focus on other problems at a higher level of abstraction and it allows the ecosystem to thrive.
 
 ## K3d
 In the last 6 months or so, I started reading many articles about how [K3s](https://k3s.io/) and [K3d](https://k3d.io/v5.5.1/) could be an alternative to Minikube. Since I was happy with Kind, I didn't investigate this further. 
@@ -85,7 +89,9 @@ Only recently I discovered a new YouTube channel called [DevOpsToolkit](https://
 Since then, I change my mind about using K3d for local development. This happened when I learned that it provides a similar user experience to Kind (meaning you can run a multi-node cluster with Docker containers) but internally it runs K3s, which is a 100% compatible Kubernetes alternative but a lot lighter on the CPU/Memory requirements. K3s achieves this by removing parts of the Kubernetes code that are obsolete and by replacing Etcd with a lighter database alternative.
 
 ## Final setup
-After watching the following video [How To Replace Docker With nerdctl And Rancher Desktop](https://www.youtube.com/watch?v=evWPib0iNgY) on Youtube channel [DevOpsToolkit](https://www.youtube.com/@DevOpsToolkit), I also learned how you can replace Docker Desktop with an open-source solution called Rancher Desktop. If only this tool was available when I was working in the investment bank, maybe I would still be working there now.
+After watching the following video [How To Replace Docker With nerdctl And Rancher Desktop](https://www.youtube.com/watch?v=evWPib0iNgY) on YouTube channel [DevOpsToolkit](https://www.youtube.com/@DevOpsToolkit), I also learned how you can replace Docker Desktop with an open-source solution called [Rancher Desktop](https://rancherdesktop.io/). If only this tool was available when I was working in the investment bank, maybe I would still be working there now.
+
+{{< youtube evWPib0iNgY >}}
 
 This video was shot a year ago, since then I am happy to say that Rancher Desktop is now supported on Apple M1 laptops and thanks to [Colima](https://github.com/abiosoft/colima) and [nerdctl](https://github.com/containerd/nerdctl) and a few Linux aliases you can be unaware that Docker is no longer running on your machine.
 
@@ -97,7 +103,7 @@ Even if I decided to never use docker-compose for my local environment, unfortun
 
 Rancher Desktop supports both Containerd and Docker container runtime. While I am happy that Docker is no longer installed on my machine, I am afraid that I still need to use Docker container runtime since [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) are not supported (at least not yet) with Containerd runtime. More about this [here](https://docs.rancherdesktop.io/how-to-guides/vs-code-remote-containers).
 
-Devcontainer is a new technology developed by Microsoft that allows you to use containers to not only run your application but also write and test your code. If you are developing an app, you would require some third party tools like K9s, Dive, Helm, Kubectl, Skaffold and many more. With devcontainers you can package those tools in a container, and then use VS Code to write code inside that container mounted as a remote container without the developers installing those tools on their machines. 
+Devcontainer is a new technology developed by Microsoft that allows you to use containers to not only run your application but also write and test your code. If you are developing an app, you would require some third-party tools like K9s, Dive, Helm, Kubectl, Skaffold, and many more. With devcontainers you can package those tools in a container, and then use VS Code to write code inside that container mounted as a remote container without the developers installing those tools on their machines. 
 
 Similar technology is used to provide [Gitpod](https://www.gitpod.io/) and [Github codespaces](https://code.visualstudio.com/docs/remote/codespaces) to extend the capabilities of your laptop over the physical limitations of your hardware. I'll probably write another blog post on this subject in the future.
 
