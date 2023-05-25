@@ -83,6 +83,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # website images for Open Graph and Twitter Cards
   images = ["/logo.png"]
 
+  [params.donation]
+    enable = true
+
+    [params.donation.kofi]
+      id = "gsantoro"
+
+
   # Header config
   [params.header]
     # desktop header mode ["fixed", "normal", "auto"]
