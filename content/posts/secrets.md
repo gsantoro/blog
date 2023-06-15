@@ -2,6 +2,11 @@
 title: "Can you keep a secret... on your laptop?"
 date: 2023-06-11T11:21:11+01:00
 draft: false
+tags:
+- DevOps
+- Secrets
+- Credentials
+- Security
 ---
 
 Can you keep a secret... on your laptop?
