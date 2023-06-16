@@ -12,7 +12,7 @@ In this article, we are going to describe a possible solution to store secrets e
 
 <!--more-->
 
-{{< image src="/images/secret.jpeg" title="Certified Kubernetes administrator" width="512px" >}}
+{{< image src="/images/secret.jpeg" title="Keep a secret" width="512px" >}}
 
 ## Introduction
 
