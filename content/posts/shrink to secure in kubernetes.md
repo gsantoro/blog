@@ -1,12 +1,14 @@
 ---
-title: "How size and security are interdependent in Kubernetes containers"
-date: 2023-06-16T11:37:29+01:00
-draft: true
+title: "Shrink to Secure: Kubernetes and Secure Compact Containers"
+date: 2023-06-23T22:18:29+01:00
+draft: false
 ---
 
 Reduce your Kubernetes container size to improve security. 
 
-These two concepts seem very much unrelated in other technical fields but when talking about Kubernetes containers you can reduce the first while improving the latter. For once you don't have to choose between security and performance. "You can have your cake and eat it too". 
+These two concepts seem very much unrelated in other technical fields but when talking about Kubernetes containers you can reduce the first while improving the latter. 
+
+> For once you don't have to choose between security and performance. "You can have your cake and eat it too". 
 
 <!--more-->
 
@@ -18,8 +20,6 @@ These two concepts seem very much unrelated in other technical fields but when t
 ## Introduction
 
 In this article, I would try to explain why size and security are very much related when it comes to containers and what you can do to reduce the first while improving the latter. 
-
-This article starts with a section on why size matters and how it affects security. Then I explain why container images are sometimes quite large. Then I cover the evolution of the techniques used to reduce the size of a container, starting from Alpine Linux, and then following with Wolfi OS from Chainguard, Multi-stage Docker builds, and finally more advanced technologies like Buildpacks and Chainguard's Melange and Apko. Finally, I will provide a short description of some tools that can help detect security issues and remediate them.
 
 I would create a future article about how to implement those techniques with code snippets and scripts. For now, I would like to just convince you that investing your time and resources into those techniques can have massive benefits.
 
@@ -33,16 +33,16 @@ Smaller size containers have several benefits both for developers and administra
 - **Smaller footprint on disk**. This either means more space on your laptop for developers or smaller costs if storing images in a private container registry on cloud storage.
 
 <!-- CVE -->
-How a smaller size is related to security, you might ask. The answer is in the latest trend on containers that have been the main focus of the last couple of years: security, DevSecOps, and  Common Vulnerability and Exposures (CVE). 
+How a smaller size is related to security, you might ask. The answer is in the latest trend on containers that have been the main focus of the last couple of years: **security, DevSecOps, and  Common Vulnerability and Exposures (CVE)**. 
 
-Turns out that if you remove lots of unnecessary software, like the entire OS your image is based on, you will reduce the number of vulnerabilities in the process. 
+> Turns out that if you remove lots of unnecessary software, like the entire OS your image is based on, you will reduce the number of vulnerabilities in the process. 
 
 Imagine removing the entire Operating system and leaving only your application. All of a sudden you don't have to wait six months or more for a new version of the OS to fix those vulnerabilities but you can just fix your code instead. In reality, software engineers don't tend to write software from scratch. They use third-party libraries and those come with their vulnerabilities. Those are easier and faster to fix but still something to keep in mind.
 
 <!-- why we still create large containers -->
 As you can see, there are not very many reasons why using bigger containers should be the default approach. 
 
-So why do we still create large containers in 2023?
+> So why do we still create large containers in 2023?
 
 The main reason, it is a lot easier to build bloated large containers than images with only the strictly necessary. This is mostly due to the evolution of containers and the only very recent concept of distroless containers.
 
@@ -57,6 +57,9 @@ One of the main benefits of using containers versus VMs was the lighter footprin
 The problem with the analogy with VMs is that base images at the beginning closely replicated common operating systems like Debian or Ubuntu. While containers with those images are still lighter than VMs, they still pack quite a lot of software that might not be strictly necessary to run your application.
 
 ## Alpine Linux
+
+{{< image src="/images/alpinelinux-logo.png" title="Alpine Linux" width="512px" >}}
+
 <!-- alpine -->
 The very first approach to reduce the size of container images was the introduction of a very lightweight base container image called [Alpine Linux](https://hub.docker.com/_/alpine/). I clearly remember when I started using Alpine as my base image, I thought that only the container size and the faster dev loop were good reasons to never use OS-based images in my Docker containers. 
 
@@ -82,6 +85,9 @@ In the following sections, we are going to cover three main techniques that make
 We are going to explain when to use each of those techniques and why there is not a single approach for each use case but you should be aware of them all to be able to make a conscious decision.
 
 ## Wolfi OS
+
+{{< image src="/images/wolfi-logo.png" title="WolfiOS" width="512px" >}}
+
 Late last year, Chainguard (a company founded by Google engineers behind [distroless](https://www.chainguard.dev/unchained/minimal-container-images-towards-a-more-secure-future) containers) [announced](https://www.chainguard.dev/unchained/introducing-wolfi-the-first-linux-un-distro) a new container image called [Wolfi](https://github.com/wolfi-dev). 
 
 The idea is similar to Alpine Linux, they created a new OS image with a smaller footprint and zero vulnerabilities and then started creating other images based on that to pack software like Nginx or Golang.
@@ -115,6 +121,9 @@ Some technologies are even used under the hood by major cloud providers (like Bu
 I haven't used a multi-staged Dockerfile in a while now, but if I had to create one today I would probably opt for using an Alpine-based image for my building phase and a Wolfi-Os image for the running phase.
 
 ## Buildpacks
+
+{{< image src="/images/buildpacks-logo.png" title="Buildpacks.io - CNCF project" width="512px" >}}
+
 [Buildpacks](https://buildpacks.io/) have a long history of development. There were first introduced in 2011 by Heroku and more recently they evolved into Cloud Native Buildpacks and they are now an incubating project in the [Cloud Native Foundation landscape](https://www.cncf.io/projects/buildpacks/).
 
 Buildpacks were in their initial form used by Google App Engine a while ago and more recently as [Google Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks) they are used by [Google Cloud Run](https://cloud.google.com/run) to detect your code from source and automatically build a container image that is compliant with [OCI image format](https://github.com/opencontainers/image-spec).
