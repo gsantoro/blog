@@ -14,7 +14,7 @@ I recently passed my [CKA exam](https://twitter.com/gsantoro15/status/1642572237
 
 <!--more-->
 
-{{< image src="/images/cka.jpg" title="Certified Kubernetes administrator" width="256px" >}}
+{{< figure src="/images/cka.jpg" caption="Certified Kubernetes administrator" width="256px" >}}
 
 ## Booking 
 - You need to allow 24h from when you schedule an exam to when the exam can take place. This includes any possible retakes. Keep that in mind if the expiration date is approaching.

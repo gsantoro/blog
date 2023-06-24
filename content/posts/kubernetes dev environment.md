@@ -13,7 +13,7 @@ TL;DR: I recently uninstalled Docker Desktop entirely from my MacBook and replac
 
 <!--more-->
 
-{{< image src="/images/containers_sketch.jpeg" title="Containers" width="512px"  >}}
+{{< figure src="/images/containers_sketch.jpeg" caption="Containers" width="512px"  >}}
 
 ## Intro
 In 2023, there are many different ways of configuring your Kubernetes development environment. Some of them are **Docker Desktop, Minikube, Kind, K3s, and K3d** but the list goes on and on.

@@ -12,10 +12,7 @@ These two concepts seem very much unrelated in other technical fields but when t
 
 <!--more-->
 
-{{< image src="/images/matthew-henry-fPxOowbR6ls-unsplash.jpg" title="Photo by Matthew Henry on Unsplash" width="512px" >}}
-  
-  Photo by <a href="https://unsplash.com/fr/@matthewhenry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matthew Henry</a> on <a href="https://unsplash.com/photos/fPxOowbR6ls?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+{{< figure src="/images/matthew-henry-fPxOowbR6ls-unsplash.jpg" caption="Photo by Matthew Henry on Unsplash" width="512px" >}}  
 
 ## Introduction
 
@@ -58,7 +55,7 @@ The problem with the analogy with VMs is that base images at the beginning close
 
 ## Alpine Linux
 
-{{< image src="/images/alpinelinux-logo.png" title="Alpine Linux" width="512px" >}}
+{{< figure src="/images/alpinelinux-logo.png" caption="Alpine Linux" width="512px" >}}
 
 <!-- alpine -->
 The very first approach to reduce the size of container images was the introduction of a very lightweight base container image called [Alpine Linux](https://hub.docker.com/_/alpine/). I clearly remember when I started using Alpine as my base image, I thought that only the container size and the faster dev loop were good reasons to never use OS-based images in my Docker containers. 
@@ -86,7 +83,7 @@ We are going to explain when to use each of those techniques and why there is no
 
 ## Wolfi OS
 
-{{< image src="/images/wolfi-logo.png" title="WolfiOS" width="512px" >}}
+{{< figure src="/images/wolfi-logo.png" caption="WolfiOS" width="512px" >}}
 
 Late last year, Chainguard (a company founded by Google engineers behind [distroless](https://www.chainguard.dev/unchained/minimal-container-images-towards-a-more-secure-future) containers) [announced](https://www.chainguard.dev/unchained/introducing-wolfi-the-first-linux-un-distro) a new container image called [Wolfi](https://github.com/wolfi-dev). 
 
@@ -122,7 +119,7 @@ I haven't used a multi-staged Dockerfile in a while now, but if I had to create 
 
 ## Buildpacks
 
-{{< image src="/images/buildpacks-logo.png" title="Buildpacks.io - CNCF project" width="512px" >}}
+{{< figure src="/images/buildpacks-logo.png" caption="Buildpacks.io - CNCF project" width="512px" >}}
 
 [Buildpacks](https://buildpacks.io/) have a long history of development. There were first introduced in 2011 by Heroku and more recently they evolved into Cloud Native Buildpacks and they are now an incubating project in the [Cloud Native Foundation landscape](https://www.cncf.io/projects/buildpacks/).
 

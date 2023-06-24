@@ -12,7 +12,7 @@ How an almost unknown setting called `ignore_malformed` can make the difference 
 
 <!--more-->
 
-{{< image src="/images/elasticsearch.png" title="Elasticsearch" width="512px" >}}
+{{< figure src="/images/elasticsearch.png" caption="Elasticsearch" width="512px" >}}
 
 ## Disclaimer
 
