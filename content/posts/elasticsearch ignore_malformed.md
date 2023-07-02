@@ -4,6 +4,7 @@ date: 2023-06-17T17:56:24+01:00
 draft: false
 tags:
 - Elasticsearch
+- Data Ingestion
 ---
 
 Ignore fields that are not compliant with index mappings and avoid dropping documents during ingestion with Elasticsearch.

@@ -2,6 +2,11 @@
 title: "Shrink to Secure: Kubernetes and Secure Compact Containers"
 date: 2023-06-23T22:18:29+01:00
 draft: false
+tags:
+- DevOps
+- Security
+- Kubernetes
+- Containers
 ---
 
 Reduce your Kubernetes container size to improve security. 
