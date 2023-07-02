@@ -12,9 +12,7 @@ Run a container to get full access to the Kubernetes node
 
 <!--more-->
 
-![[../photos/ep 2 - hermit crab.jpg]]
-
-Photo by [Anna Mcphee](https://unsplash.com/@annamcphee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Jed2gmiGpms?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+{{< figure src="/images/hermit crab.jpg" caption="Photo by Anna Mcphee on Unsplash" width="512px" >}}  
 
 While working with Kubernetes, it might happens that you would like to SSH into a node to investigate the underlying infrastructure. For example, you might want to look into the running processes or read from the local file system. 
 
