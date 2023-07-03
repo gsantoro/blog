@@ -89,6 +89,12 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.donation.kofi]
       id = "gsantoro"
 
+  [params.ads]
+    enable = true
+
+    [params.ads.adsense]
+      id = "ca-pub-5171841809646840"
+
 
   # Header config
   [params.header]
