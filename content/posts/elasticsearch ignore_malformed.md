@@ -240,3 +240,16 @@ I'm going to post more articles in the future on this tiny but mighty setting. S
 
 ## Resources
 - https://www.elastic.co/guide/en/elasticsearch/reference/8.8/ignore-malformed.html
+
+## Call to Action
+Did you enjoy what you've read here on my blog? Do you find yourself intrigued, inspired, or even challenged by the perspectives shared? If the answer is a resounding yes, then I'd like to personally invite you to join our thriving community by subscribing to my newsletter on Substack.
+
+As a member, you'll receive regular insights directly from me - narratives, commentaries, thought pieces, and curated links that continue to probe the boundaries of the topics we explore on this blog. It's a chance to dive deeper, to connect, and to be part of a group of inquisitive minds who are just as passionate about these issues as you are.
+
+Joining couldn't be easier. Just click [this link](https://open.substack.com/pub/cloudnativeengineer/p/welcome-to-cloud-native-engineer?r=23gwx&utm_campaign=post&utm_medium=web) and enter your email address. That's it. You're in.
+
+Don't miss out on the conversation that's shaping our world. Subscribe today, and let's explore together.
+
+See you in your inbox soon!
+
+[Click Here to Subscribe Now](https://open.substack.com/pub/cloudnativeengineer/p/welcome-to-cloud-native-engineer?r=23gwx&utm_campaign=post&utm_medium=web)
