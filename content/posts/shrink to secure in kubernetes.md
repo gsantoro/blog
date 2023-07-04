@@ -14,13 +14,13 @@ Reduce your Kubernetes container size to improve security.
 
 These two concepts seem very much unrelated in other technical fields but when talking about Kubernetes containers you can reduce the first while improving the latter. 
 
-> For once you don't have to choose between security and performance. "You can have your cake and eat it too". 
-
 <!--more-->
 
 {{< figure src="/images/matthew-henry-fPxOowbR6ls-unsplash.jpg" caption="Photo by Matthew Henry on Unsplash" width="512px" >}}  
 
 ## Introduction
+
+> For once you don't have to choose between security and performance. "You can have your cake and eat it too". 
 
 In this article, I would try to explain why size and security are very much related when it comes to containers and what you can do to reduce the first while improving the latter. 
 
