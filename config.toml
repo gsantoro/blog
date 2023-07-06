@@ -57,18 +57,18 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     name = "Tags"
     url = "/tags/"
     title = ""
-  # [[menu.main]]
-  #   weight = 3
-  #   identifier = "categories"
-  #   pre = ""
-  #   post = ""
-  #   name = "Categories"
-  #   url = "/categories/"
-  #   title = ""
+  [[menu.main]]
+    weight = 3
+    identifier = "categories"
+    pre = '<i class="fa-solid fa-tags"></i>'
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
 
 [params]
   # site default theme ["auto", "light", "dark"]
-  defaultTheme = "dark"
+  defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
   gitRepo = ""
   #  which hash function used for SRI, when empty, no SRI is used

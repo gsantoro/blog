@@ -8,6 +8,8 @@ tags:
 - CKA
 - Books
 - O'Reilly
+categories:
+- Kubernetes
 ---
 
 You just bought your [Certified Kubernetes Administrator exam](https://trainingportal.linuxfoundation.org/learn/course/certified-kubernetes-administrator-cka/exam/exam) and you don't know where to start?
@@ -51,7 +53,7 @@ This book is absolutely fundamental if you never approached any of the Linux Fou
 
 When I was reading this book, I had the wrong impression that it would be enough to pass the exam. I could not have been more wrong.
 
-I only realized this when I decided to give a try to the CKA exam simulator that you can find at https://killer.sh/dashboard. If you log in to killer.sh with your Linux Foundation credentials and you bought a CKA exam, you are going to find 2 exam simulator tests for free. 
+I only realized this when I decided to give a try to the CKA exam simulator that you can find at [Killer shell](https://killer.sh/dashboard). If you log in to killer.sh with your Linux Foundation credentials and you bought a CKA exam, you are going to find 2 exam simulator tests for free. 
 
 I strongly suggest that you try at least one of those simulator exams, way in advance of your exam date. Even if you think that you are not ready yet. Doing at least one of those simulator exams will not only give you a sense if you are prepared or not but more importantly will tell you which areas to focus more in your studying.
 

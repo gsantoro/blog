@@ -6,6 +6,8 @@ tags:
 - Kubernetes
 - DevOps
 - CKA
+categories:
+- Kubernetes
 ---
 
 Tips and tricks to pass the [Certified Kubernetes Administrator exam](https://trainingportal.linuxfoundation.org/learn/course/certified-kubernetes-administrator-cka/exam/exam).

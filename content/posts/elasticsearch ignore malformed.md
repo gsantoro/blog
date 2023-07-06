@@ -5,6 +5,8 @@ draft: false
 tags:
 - Elasticsearch
 - Data Ingestion
+categories:
+- Elastic
 ---
 
 Ignore fields that are not compliant with index mappings and avoid dropping documents during ingestion with Elasticsearch.
@@ -239,7 +241,7 @@ I am personally working on this feature, and I can reassure you that it is a gam
 I'm going to post more articles in the future on this tiny but mighty setting. Stay tuned.
 
 ## Resources
-- https://www.elastic.co/guide/en/elasticsearch/reference/8.8/ignore-malformed.html
+- [ignore-malformed documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/ignore-malformed.html)
 
 ## Call to Action
 Did you enjoy what you've read here on my blog? Do you find yourself intrigued, inspired, or even challenged by the perspectives shared? If the answer is a resounding yes, then I'd like to personally invite you to join our thriving community by subscribing to my newsletter on Substack.

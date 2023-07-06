@@ -7,6 +7,8 @@ tags:
 - Secrets
 - Credentials
 - Security
+categories:
+- DevOps
 ---
 
 Can you keep a secret... on your laptop?
@@ -71,7 +73,7 @@ Can we have a better solution that combines the requirements of Developers (easi
 
 I believe I have found a better solution, to the ones proposed before, that combines all the requirements described in the introduction and it is both secure, simple and cheap.
 
-The solution involves using a tiny (and almost unknown) tool called "envchain" available at https://github.com/sorah/envchain. This tool follows the [Unix Philosphy](https://en.wikipedia.org/wiki/Unix_philosophy) of minimalist and composable tools that is at the backbone of any modern software.
+The solution involves using a tiny (and almost unknown) tool called ["envchain"](https://github.com/sorah/envchain). This tool follows the [Unix Philosphy](https://en.wikipedia.org/wiki/Unix_philosophy) of minimalist and composable tools that is at the backbone of any modern software.
 
 Between the benefits we can find:
 
@@ -89,7 +91,7 @@ For example, you could use envchain to store your AWS credentials and load them 
 
 {{<gist gsantoro 81058dae699a56686b008464b862195c>}}
 
-While envchain supports both MacOS and Linux keychains, if you are only interested in securing your secrets on MacOS you can use MacOS keychain CLI via the `security` command. More information [here](https://www.aria.ai/blog/posts/storing-secrets-with-keychain.html).
+While envchain supports both MacOS and Linux keychains, if you are only interested in securing your secrets on MacOS you can use MacOS keychain CLI via the `security` command. You can find more information at [Storing Secrets Using the MacOS Keychain CLI](https://www.aria.ai/blog/posts/storing-secrets-with-keychain.html).
 
 ## Conclusion
 With this article, I wanted to prove that you can both achieve a simple, secure and automated way to store secrets on your laptop.

@@ -8,6 +8,9 @@ tags:
 - Kubernetes
 - Containers
 - CVEs
+categories:
+- Kubernetes
+- Container Security
 ---
 
 Reduce your Kubernetes container size to improve security. 

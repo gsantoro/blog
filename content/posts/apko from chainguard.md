@@ -7,6 +7,8 @@ tags:
 - Containers
 - Distroless
 - Ephemeral containers
+categories:
+- Container Security
 ---
 
 <!--- subtitle --->

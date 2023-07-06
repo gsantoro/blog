@@ -7,6 +7,8 @@ tags:
 - DevOps
 - Development environment
 - Docker
+categories:
+- Kubernetes
 ---
 
 TL;DR: I recently uninstalled Docker Desktop entirely from my MacBook and replaced it with Rancher Desktop. 
@@ -101,7 +103,7 @@ Even if I decided to never use docker-compose for my local environment, unfortun
 
 ## What to do if your local environment is not big enough?
 
-Rancher Desktop supports both Containerd and Docker container runtime. While I am happy that Docker is no longer installed on my machine, I am afraid that I still need to use Docker container runtime since [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) are not supported (at least not yet) with Containerd runtime. More about this [here](https://docs.rancherdesktop.io/how-to-guides/vs-code-remote-containers).
+Rancher Desktop supports both Containerd and Docker container runtime. While I am happy that Docker is no longer installed on my machine, I am afraid that I still need to use Docker container runtime since [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) are not supported (at least not yet) with Containerd runtime. You can install [VS Code Remote Containers](https://docs.rancherdesktop.io/how-to-guides/vs-code-remote-containers) if you are interested.
 
 Devcontainer is a new technology developed by Microsoft that allows you to use containers to not only run your application but also write and test your code. If you are developing an app, you would require some third-party tools like K9s, Dive, Helm, Kubectl, Skaffold, and many more. With devcontainers you can package those tools in a container, and then use VS Code to write code inside that container mounted as a remote container without the developers installing those tools on their machines. 
 

@@ -6,6 +6,8 @@ tags:
 - Kubernetes
 - DevOps
 - Containers
+categories:
+- Kubernetes
 ---
 
 Run a container to get full access to the Kubernetes node
@@ -26,8 +28,8 @@ Discover [node-shell](https://github.com/kvaps/kubectl-node-shell/blob/master/RE
 ## How to install
 Node-shell can be installed using [krew](https://krew.sigs.k8s.io/) a plugin manager for [kubectl](https://kubernetes.io/docs/reference/kubectl/) command line tool. 
 
-1. Install `kubectl` from [here](https://kubernetes.io/docs/tasks/tools/#kubectl) if not available already
-2. Install `krew` from [here](https://krew.sigs.k8s.io/docs/user-guide/setup/install/) if not available already
+1. Install [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl) if not available already
+2. Install [krew](https://krew.sigs.k8s.io/docs/user-guide/setup/install/) if not available already
 3. Install node-shell
 
 ```bash
