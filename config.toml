@@ -4,7 +4,7 @@ baseURL = "https://gsantoro.dev/"
 theme = "LoveIt"
 
 # website title
-title = "Giuseppe Santoro - gsantoro"
+title = "gsantoro"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "en"
@@ -23,7 +23,7 @@ copyright = ""
 # whether to use robots.txt
 enableRobotsTXT = true
 # whether to use git commit log
-enableGitInfo = true
+enableGitInfo = false
 # whether to use emoji code
 enableEmoji = true
 
@@ -49,7 +49,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     name = "Posts"
     url = "/posts/"
     # title will be shown when you hover on this menu link
-    title = ""
+    title = "My posts"
   [[menu.main]]
     weight = 2
     identifier = "about"
@@ -58,7 +58,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     post = ""
     name = "About"
     url = "/about/"
-    title = ""
+    title = "About me"
   [[menu.main]]
     weight = 3
     identifier = "tags"
@@ -66,7 +66,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     post = ""
     name = "Tags"
     url = "/tags/"
-    title = ""
+    title = "Tags"
   [[menu.main]]
     weight = 4
     identifier = "categories"
@@ -74,7 +74,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     post = ""
     name = "Categories"
     url = "/categories/"
-    title = ""
+    title = "Categories"
 
 [params]
   # site default theme ["auto", "light", "dark"]
@@ -87,7 +87,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  date format
   dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
-  title = "Giuseppe Santoro - gsantoro"
+  title = "gsantoro"
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = "Giuseppe Santoro - gsantoro - My personal blog on Kubernetes, Elasticsearch, System Design, and Cloud Native tecnologies"
   # website images for Open Graph and Twitter Cards
@@ -165,7 +165,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "Giuseppe Santoro - gsantoro"
+    title = "gsantoro"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
@@ -213,7 +213,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       #  title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page (HTML format is supported)
-      subtitle = ""
+      subtitle = "Senior Software Engineer at Elastic"
       # whether to use typeit animation for subtitle
       typeit = false
       # whether to show social links
@@ -246,13 +246,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Quora = ""
     Keybase = ""
     Pinterest = ""
-    # Reddit = "sanpino84"
-    Reddit = ""
+    Reddit = "sanpino84"
     Codepen = ""
     FreeCodeCamp = ""
     Bitbucket = ""
-    # Stackoverflow = "680740/pinosan"
-    Stackoverflow = ""
+    Stackoverflow = "680740/pinosan"
     Weibo = ""
     Odnoklassniki = ""
     VK = ""
@@ -268,8 +266,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Goodreads = ""
     Lastfm = ""
     Foursquare = ""
-    # Hackernews = "gsantoro"
-    Hackernews = ""
+    Hackernews = "gsantoro"
     Kickstarter = ""
     Patreon = ""
     Steam = ""
@@ -327,7 +324,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     #  whether to enable the fontawesome extended syntax
     fontawesome = true
     # whether to show link to Raw Markdown content of the content
-    linkToMarkdown = true
+    linkToMarkdown = false
     #  whether to show the full text content in RSS
     rssFullText = false
     #  Table of the contents config
@@ -340,7 +337,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       auto = true
     #  KaTeX mathematical formulas
     [params.page.math]
-      enable = true
+      enable = false
       #  default inline delimiter is $ ... $ and \( ... \)
       inlineLeftDelimiter = ""
       inlineRightDelimiter = ""
@@ -377,7 +374,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.page.share]
       enable = true
       Twitter = true
-      Facebook = true
+      Facebook = false
       Linkedin = true
       Whatsapp = false
       Pinterest = false
@@ -389,7 +386,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       Xing = false
       Line = false
       Instapaper = false
-      Pocket = false
+      Pocket = true
       Flipboard = false
       Weibo = false
       Blogger = false
@@ -405,9 +402,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Disqus comment config
       [params.page.comment.disqus]
         # 
-        enable = false
+        enable = true
         # Disqus shortname to use Disqus in posts
-        shortname = ""
+        shortname = "gsantoro"
       # Gitalk comment config
       [params.page.comment.gitalk]
         # 
