@@ -2,7 +2,7 @@
 title: "About Giuseppe Santoro"
 date: 2023-07-07T23:23:49+08:00
 draft: false
-# description: "About Giuseppe Santoro"
+description: "About Giuseppe Santoro"
 # images: ["/Apple-Devices-Preview.png"]
 
 # lightgallery: true
