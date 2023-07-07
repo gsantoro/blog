@@ -4,7 +4,7 @@ baseURL = "https://gsantoro.dev/"
 theme = "LoveIt"
 
 # website title
-title = "Giuseppe Santoro (gsantoro) - My personal blog"
+title = "Giuseppe Santoro - gsantoro"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "en"
@@ -42,7 +42,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     weight = 1
     identifier = "posts"
     # you can add extra information before the name (HTML format is supported), such as icons
-    pre = '<i class="fa-solid fa-book"></i>'
+    # pre = '<i class="fa-solid fa-book"></i>'
+    pre = '<i class="fa-solid fa-book-open"></i>'
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
     name = "Posts"
@@ -51,6 +52,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     title = ""
   [[menu.main]]
     weight = 2
+    identifier = "about"
+    # pre = '<i class="fa-solid fa-user"></i>'
+    pre = '<i class="fa-regular fa-circle-user"></i>'
+    post = ""
+    name = "About"
+    url = "/about/"
+    title = ""
+  [[menu.main]]
+    weight = 3
     identifier = "tags"
     pre = '<i class="fa-solid fa-tags"></i>'
     post = ""
@@ -58,9 +68,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     url = "/tags/"
     title = ""
   [[menu.main]]
-    weight = 3
+    weight = 4
     identifier = "categories"
-    pre = '<i class="fa-solid fa-tags"></i>'
+    pre = '<i class="fa-regular fa-folder-open"></i>'
     post = ""
     name = "Categories"
     url = "/categories/"
@@ -77,9 +87,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  date format
   dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
-  title = "Giuseppe Santoro (gsantoro) - My personal blog"
+  title = "Giuseppe Santoro - gsantoro"
   # website description for RSS, SEO, Open Graph and Twitter Cards
-  description = "Giuseppe Santoro (gsantoro) - My personal blog on Kubernetes, Elasticsearch, and Cloud Native tecnologies"
+  description = "Giuseppe Santoro - gsantoro - My personal blog on Kubernetes, Elasticsearch, System Design, and Cloud Native tecnologies"
   # website images for Open Graph and Twitter Cards
   images = ["https://gsantoro.dev/images/avatar.png"]
 
@@ -123,15 +133,16 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     #  whether to show Hugo and theme info
     hugo = true
     #  whether to show copyright info
-    copyright = true
+    copyright = false
     #  whether to show the author
-    author = true
+    # author = true
+    author = false
     # Site creation time
-    since = 2022
+    since = 2023
     # ICP info only in China (HTML format is supported)
     icp = ""
     # license info (HTML format is supported)
-    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    # license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
   #  Section (all posts) page config
   [params.section]
@@ -154,11 +165,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "Giuseppe Santoro (gsantoro) - My personal blog"
+    title = "Giuseppe Santoro - gsantoro"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = ""
+    svgFavicon = "/images/avatar.png"
     # Android browser theme color
     themeColor = "#ffffff"
     # Safari mask icon color
@@ -235,11 +246,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Quora = ""
     Keybase = ""
     Pinterest = ""
-    Reddit = "sanpino84"
+    # Reddit = "sanpino84"
+    Reddit = ""
     Codepen = ""
     FreeCodeCamp = ""
     Bitbucket = ""
-    Stackoverflow = "680740/pinosan"
+    # Stackoverflow = "680740/pinosan"
+    Stackoverflow = ""
     Weibo = ""
     Odnoklassniki = ""
     VK = ""
@@ -255,7 +268,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Goodreads = ""
     Lastfm = ""
     Foursquare = ""
-    Hackernews = "gsantoro"
+    # Hackernews = "gsantoro"
+    Hackernews = ""
     Kickstarter = ""
     Patreon = ""
     Steam = ""
