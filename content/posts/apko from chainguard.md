@@ -15,7 +15,6 @@ Effortlessly create your distroless container images
 
 <!--more-->
 
-
 <!--- image --->
 {{< figure src="/images/container_yard.jpg" caption="Photo by CHUTTERSNAP on Unsplash" width="256px" >}}
 
@@ -195,12 +194,11 @@ Apko has now become my tool of choice when I want to just pack already available
 
 If you were to reproduce the same outcome in Docker, you could either use the command `docker manifest` or alternatively `docker buildx`. The first option involves quite a few commands, while buildx is still experimental in docker. You can find more information about both those commands [here](https://www.docker.com/blog/multi-arch-build-and-images-the-simple-way/).
 
-
 ## Call to Action
 Did you enjoy what you've read here on my blog? Do you find yourself intrigued, inspired, or even challenged by the perspectives shared? If the answer is a resounding yes, then I'd like to personally invite you to join our thriving community by subscribing to my newsletter on Substack.
 
 As a member, you'll receive regular insights directly from me - narratives, commentaries, thought pieces, and curated links that continue to probe the boundaries of the topics we explore on this blog. It's a chance to dive deeper, to connect, and to be part of a group of inquisitive minds who are just as passionate about these issues as you are.
 
-See you in your inbox soon!
+See you soon in your inbox!
 
 [Click Here to Subscribe Now](https://open.substack.com/pub/cloudnativeengineer/p/welcome-to-cloud-native-engineer?r=23gwx&utm_campaign=post&utm_medium=web)
