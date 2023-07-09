@@ -2,7 +2,7 @@
 title: "About Giuseppe Santoro"
 date: 2023-07-07T23:23:49+08:00
 draft: false
-description: Welcome to my professional profile! I'm a Senior Software Engineer at Elastic with expertise in Cloud Native, Observability, Kubernetes & Containers, DevOps, Golang, and AWS Cloud. 
+description: I'm a Senior Software Engineer at Elastic with expertise in Cloud Native, Observability, Kubernetes & Containers, DevOps, Golang, and AWS Cloud. 
 # images: ["/Apple-Devices-Preview.png"]
 
 # lightgallery: true
