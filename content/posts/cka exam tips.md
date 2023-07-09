@@ -8,6 +8,7 @@ tags:
 - Certified Kubernetes
 categories:
 - Kubernetes
+description: Get valuable tips for passing the Certified Kubernetes Administrator (CKA) exam. Prepare effectively with insights on exam rules and environment setup. 
 ---
 
 Tips and tricks to pass the [Certified Kubernetes Administrator exam](https://trainingportal.linuxfoundation.org/learn/course/certified-kubernetes-administrator-cka/exam/exam).

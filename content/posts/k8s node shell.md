@@ -8,6 +8,7 @@ tags:
 - Containers
 categories:
 - Kubernetes
+description: Discover node-shell, the powerful kubectl plugin that provides SSH-like access to Kubernetes nodes for infrastructure investigation.
 ---
 
 Run a container to get full access to the Kubernetes node

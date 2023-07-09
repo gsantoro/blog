@@ -8,6 +8,7 @@ tags:
 - Distroless
 categories:
 - Container Security
+description: Apko from Chainguard revolutionizes container image creation. Build compact, secure, and reproducible images with ease using a simple YAML config.
 ---
 
 <!--- subtitle --->

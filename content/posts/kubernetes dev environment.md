@@ -9,6 +9,7 @@ tags:
 - Docker
 categories:
 - Kubernetes
+description: Discover Kubernetes development environments. Explore options like Docker Desktop, Minikube, Kind, K3s, K3d, and Rancher Desktop.
 ---
 
 TL;DR: I recently uninstalled Docker Desktop entirely from my MacBook and replaced it with Rancher Desktop. 

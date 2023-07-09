@@ -8,7 +8,7 @@ tags:
 - Containers
 categories:
 - DevOps
-description: Use CueLang as a better alternative to YAML for Kubernetes manifests
+description: Discover CUE language, a better alternative to YAML for Kubernetes manifests. Simplify configuration management and schema validation. 
 ---
 
 <!--- subtitle --->
