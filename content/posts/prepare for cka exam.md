@@ -9,6 +9,8 @@ tags:
 categories:
 - Kubernetes
 description: Prepare effectively for the Certified Kubernetes Administrator (CKA) exam with recommended books in order of complexity.
+images:
+- /images/cka-study-guide.jpg
 ---
 
 You just bought your [Certified Kubernetes Administrator exam](https://trainingportal.linuxfoundation.org/learn/course/certified-kubernetes-administrator-cka/exam/exam) and you don't know where to start?
@@ -37,7 +39,7 @@ I spent a couple of months reading all about Kubernetes from various books from 
 ### Kubernetes: Up and Running, 3rd Edition
 The very first book I read on the topic is [Kubernetes: Up and Running, 3rd Edition](https://www.google.co.uk/books/edition/Kubernetes_Up_and_Running/K5Q0DwAAQBAJ?hl=en&gbpv=0).
 
-{{< figure src="/images/kubernetes_up_and_running.jpg" caption="Kubernetes: Up and Running" width="256px" >}}
+{{< figure src="/images/kubernetes-up-and-running.jpg" caption="Kubernetes: Up and Running" width="256px" >}}
 
 This book covers lots of the fundamental blocks from Kubernetes: Pods, Services, Deployments, ConfigMaps, and Secrets. It also briefly touches on a couple of topics on how to deploy your cluster on the cloud or locally via Minikube, RBAC permission, and Service Meshes.
 
@@ -46,7 +48,7 @@ It is a good starting point if you are new to Kubernetes or if you are preparing
 ### Certified Kubernetes Administrator (CKA) Study Guide
 The second book I read on the topic is [Certified Kubernetes Administrator (CKA) Study Guide](https://www.google.co.uk/books/edition/Certified_Kubernetes_Administrator_CKA_S/fG0TzwEACAAJ?hl=en).
 
-{{< figure src="/images/cka_study_guide.jpg" caption="Kubernetes: Up and Running" width="256px" >}}
+{{< figure src="/images/cka-study-guide.jpg" caption="Kubernetes: Up and Running" width="256px" >}}
 
 This book is absolutely fundamental if you never approached any of the Linux Foundation exams. If you have a very short amount of time before the exam, make sure to read at least chapter 1 of this book. The exam is quite intense and if you want to pass it you need to be very fast. Some of the tips provided in this chapter will give you the edge that you need to ace the exam.
 
@@ -63,7 +65,7 @@ I cannot stress enough that this is the best resource you can use to pass the ex
 ### Managing Kubernetes
 Once you have done the simulator exam (like I suggested in the previous section), make sure to explore some of those topics that you are not very familiar with from the book [Managing Kubernetes](https://www.google.co.uk/books/edition/Managing_Kubernetes/UG15DwAAQBAJ?hl=en&gbpv=0).
 
-{{< figure src="/images/managing_kubernetes.jpg" caption="Kubernetes: Up and Running" width="256px" >}}
+{{< figure src="/images/managing-kubernetes.jpg" caption="Kubernetes: Up and Running" width="256px" >}}
 
 This book covers some of those more advanced topics on how to install a cluster via Kubeadm from scratch. 
 
@@ -72,7 +74,7 @@ Bear in mind that you don't need to read this book entirely to be prepared, but 
 ### Cloud Native DevOps with Kubernetes, 2nd Edition
 Finally, I would suggest you read [Cloud Native DevOps with Kubernetes, 2nd Edition](https://www.google.co.uk/books/edition/Cloud_Native_DevOps_with_Kubernetes/WEyMDwAAQBAJ?hl=en&gbpv=0). I found this book very interesting because it is a reference to many different tools in the growing ecosystem of Kubernetes.
 
-{{< figure src="/images/cloud_native_devops_kubernetes.jpg" caption="Kubernetes: Up and Running" width="256px" >}}
+{{< figure src="/images/cloud-native-devops-kubernetes.jpg" caption="Kubernetes: Up and Running" width="256px" >}}
 
 This book is very much optional to prepare for the exam. It is mostly useful if you want to get familiar with the tools currently available in the growing ecosystem of Kubernetes.
 

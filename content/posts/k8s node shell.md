@@ -9,13 +9,15 @@ tags:
 categories:
 - Kubernetes
 description: Discover node-shell, the powerful kubectl plugin that provides SSH-like access to Kubernetes nodes for infrastructure investigation.
+images:
+- /images/hermit-crab.jpg
 ---
 
 Run a container to get full access to the Kubernetes node
 
 <!--more-->
 
-{{< figure src="/images/hermit crab.jpg" caption="Photo by Anna Mcphee on Unsplash" width="512px" >}}  
+{{< figure src="/images/hermit-crab.jpg" caption="Photo by Anna Mcphee on Unsplash" width="512px" >}}  
 
 While working with Kubernetes, it might happens that you would like to SSH into a node to investigate the underlying infrastructure. For example, you might want to look into the running processes or read from the local file system. 
 

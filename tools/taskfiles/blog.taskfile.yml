@@ -30,7 +30,7 @@ tasks:
       - task: image-original
         vars:
           IMAGE_URL: https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/516FLGwb0VL._SX218_BO1,204,203,200_QL40_ML2_.jpg
-          IMAGE_NAME: cka_study_guide
+          IMAGE_NAME: cka-study-guide
           IMAGE_EXTENSION: "jpg"
 
       - task: image-original

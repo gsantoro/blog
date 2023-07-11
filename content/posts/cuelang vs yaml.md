@@ -9,6 +9,8 @@ tags:
 categories:
 - DevOps
 description: Discover CUE language, a better alternative to YAML for Kubernetes manifests. Simplify configuration management and schema validation. 
+images: 
+- /images/pool-cue.jpg
 ---
 
 <!--- subtitle --->
@@ -17,7 +19,7 @@ Is CUE language a better alternative to YAML?
 <!--more-->
 
 <!--- image --->
-{{< figure src="/images/pool cue.jpg" caption="Photo by David Herron on Unsplash" width="256px" >}}
+{{< figure src="/images/pool-cue.jpg" caption="Photo by David Herron on Unsplash" width="256px" >}}
 
 ## Meaning of the photo
 According to [Wikipedia](https://en.wikipedia.org/wiki/Cue_stick):
@@ -89,7 +91,7 @@ Having used or at least tried all the other alternatives, and never been fully h
 
 <!-- who uses CueLang -->
 So I did a bit of research, and this is what I found out:
-- [CueLang](https://github.com/cue-lang/cue) has over 4k stars on GitHub. It might not seem like a lot but it is a niche tool. That's a lot more than 1.4k stars for a similar tool [Carvel YTT](https://github.com/carvel-dev/ytt). Sorry, VMWare.
+- [CueLang](https://github.com/cue-lang/cue) has over 4k stars on GitHub. It might not seem like a lot but it is a niche tool. That's a lot more than 1.4k stars for a similar tool [Carvel YTT](https://github.com/carvel-dev/ytt). Sorry, Carvel.
 - CueLang integrates with JSON, YAML, Go, Protobuf, OpenAPI, and Kubernetes. More information about [integrations](https://cuelang.org/docs/integrations/).
 - [Istio](https://istio.io/) uses CUE to generate OpenAPI.
 - You can define [tasks and scripts with CueLang](https://cuetorials.com/patterns/scripts-and-tasks/).

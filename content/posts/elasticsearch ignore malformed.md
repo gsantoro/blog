@@ -8,6 +8,8 @@ tags:
 categories:
 - Elastic
 description: Learn how to address mapping exceptions in Elasticsearch with the ignore_malformed setting. Prevent dropped documents during ingestion and ensure data integrity
+images: 
+- /images/elasticsearch.png
 ---
 
 Ignore fields that are not compliant with index mappings and avoid dropping documents during ingestion with Elasticsearch.
