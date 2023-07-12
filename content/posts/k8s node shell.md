@@ -109,12 +109,3 @@ The Kubernetes integration has a data stream called [`container_logs`](https://d
 To achieve that, elastic-agent mounts the path `/var/log` from the node file system to its container file system. Then it tails the files under `/var/log/containers/*.log` that are created by Kubernetes with the /dev/stdout (standard output) of each container.
 
 If you want to read the raw logs created by Kubernetes, before they are ingested by Elastic agent, you can use `node-shell` to open a shell into a Kubernetes node and investigate its file system.
-
-## Call to Action
-Did you enjoy what you've read here on my blog? Do you find yourself intrigued, inspired, or even challenged by the perspectives shared? If the answer is a resounding yes, then I'd like to personally invite you to join our thriving community by subscribing to my newsletter on Substack.
-
-As a member, you'll receive regular insights directly from me - narratives, commentaries, thought pieces, and curated links that continue to probe the boundaries of the topics we explore on this blog. It's a chance to dive deeper, to connect, and to be part of a group of inquisitive minds who are just as passionate about these issues as you are.
-
-See you soon in your inbox!
-
-[Click Here to Subscribe Now](https://open.substack.com/pub/cloudnativeengineer/p/welcome-to-cloud-native-engineer?r=23gwx&utm_campaign=post&utm_medium=web)
