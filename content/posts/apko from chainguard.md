@@ -9,17 +9,17 @@ tags:
 categories:
 - Container Security
 description: Apko from Chainguard revolutionizes container image creation. Build compact, secure, and reproducible images with ease using a simple YAML config.
+featuredImage: /images/container-yard.jpg
 images: 
 - /images/container-yard.jpg
 ---
-
-<!--- subtitle --->
-Effortlessly create your distroless container images
-
 <!--more-->
 
-<!--- image --->
-{{< figure src="/images/container-yard.jpg" caption="Photo by CHUTTERSNAP on Unsplash" width="256px" >}}
+<!--- subtitle --->
+<!-- Effortlessly create your distroless container images -->
+
+<!--- caption --->
+<!-- Photo by CHUTTERSNAP on Unsplash -->
 
 ## Introduction
 <!--- what is Apko --->

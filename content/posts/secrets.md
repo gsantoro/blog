@@ -9,19 +9,20 @@ tags:
 categories:
 - DevOps
 description: Securely store secrets on laptops with envchain. It provides encryption at rest and integration with laptop lock mechanisms. 
+featuredImage: /images/secret.jpeg
 images: 
 - /images/secret.jpeg
 ---
+<!--more-->
+
+<!--- caption --->
+<!-- Keep a secret -->
 
 Can you keep a secret... on your laptop?
 
 How do you prevent credentials and API keys on your laptop to leak into the internet?
 
 In this article, we are going to describe a possible solution to store secrets easily and securely on your laptop that doesn't involve paying for third-party commercial software (eg. [Hashicorp Vault](https://www.vaultproject.io/)) or cloud resources (eg. [Secret Manager](https://aws.amazon.com/secrets-manager/)) or password managers (eg. [1Password](https://1password.com/)).
-
-<!--more-->
-
-{{< figure src="/images/secret.jpeg" caption="Keep a secret" width="512px" >}}
 
 ## Introduction
 

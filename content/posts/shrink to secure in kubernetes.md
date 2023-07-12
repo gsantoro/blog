@@ -11,17 +11,18 @@ categories:
 - Kubernetes
 - Container Security
 description: Enhance your Kubernetes security using compact containers. Discover effective techniques like Wolfi OS, Buildpacks, and finally Melange and Apko from Chainguard
+featuredImage: /images/shrink-to-secure.jpg
 images: 
 - /images/shrink-to-secure.jpg
 ---
+<!--more-->
+
+<!--- caption --->
+<!-- Photo by Matthew Henry on Unsplash -->
 
 Reduce your Kubernetes container size to improve security. 
 
 These two concepts seem very much unrelated in other technical fields but when talking about Kubernetes containers you can reduce the first while improving the latter. 
-
-<!--more-->
-
-{{< figure src="/images/shrink-to-secure.jpg" caption="Photo by Matthew Henry on Unsplash" width="512px" >}}  
 
 ## Introduction
 

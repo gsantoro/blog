@@ -8,18 +8,17 @@ tags:
 - Containers
 categories:
 - DevOps
-description: Discover CUE language, a better alternative to YAML for Kubernetes manifests. Simplify configuration management and schema validation. 
+description: Discover CUE language, a better alternative to YAML for Kubernetes manifests. Simplify configuration management and schema validation
+featuredImage: /images/pool-cue.jpg
 images: 
 - /images/pool-cue.jpg
 ---
-
-<!--- subtitle --->
-Is CUE language a better alternative to YAML?
-
 <!--more-->
+<!--- subtitle --->
+<!-- Is CUE language a better alternative to YAML? -->
 
-<!--- image --->
-{{< figure src="/images/pool-cue.jpg" caption="Photo by David Herron on Unsplash" width="256px" >}}
+<!--- caption --->
+<!-- Photo by David Herron on Unsplash -->
 
 ## Meaning of the photo
 According to [Wikipedia](https://en.wikipedia.org/wiki/Cue_stick):
