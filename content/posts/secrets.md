@@ -8,7 +8,7 @@ tags:
 - Security
 categories:
 - DevOps
-description: Securely store secrets on laptops with envchain. It provides encryption at rest and integration with laptop lock mechanisms. 
+description: Securely store secrets on laptops with envchain. It provides encryption at rest and integration with laptop lock mechanisms
 featuredImage: /images/secret.jpeg
 images: 
 - /images/secret.jpeg

@@ -8,7 +8,7 @@ tags:
 - Certified Kubernetes
 categories:
 - Kubernetes
-description: Prepare effectively for the Certified Kubernetes Administrator (CKA) exam with recommended books in order of complexity.
+description: Prepare effectively for the Certified Kubernetes Administrator (CKA) exam with recommended books in order of complexity
 featuredImage: /images/cka.jpg
 images:
 - /images/cka-study-guide.jpg

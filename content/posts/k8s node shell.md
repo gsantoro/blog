@@ -8,7 +8,7 @@ tags:
 - Containers
 categories:
 - Kubernetes
-description: Discover node-shell, the powerful kubectl plugin that provides SSH-like access to Kubernetes nodes for infrastructure investigation.
+description: Discover node-shell, the powerful kubectl plugin that provides SSH-like access to Kubernetes nodes for infrastructure investigation
 featuredImage: /images/hermit-crab.jpg
 images:
 - /images/hermit-crab.jpg
