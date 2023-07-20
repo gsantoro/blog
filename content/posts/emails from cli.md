@@ -7,7 +7,7 @@ tags:
 - DevOps
 categories:
 - DevOps
-description: Use command line tools and an API to send emails from the Command line.
+description: Combine Resend Email API, Pop from Charm.sh, Taskfile, Envchain to send emails from the command line
 featuredImage: /images/emails-from-cli.jpg
 images: 
 - /images/emails-from-cli.jpg
@@ -24,7 +24,7 @@ images:
 <!--audience-->
 I can see two main use cases for you to prefer the command line to a web solution (like Gmail) for sending emails:
 - you live in the command line and you never want to leave
-- you are a DevOps engineer in search of a cheap and secure way to automate sending emails from the command line
+- you are a DevOps engineer in search of a cheap and secure way to automate sending emails from the command line.
 
 Those two use cases definitively overlap but I mean you don't have to be a DevOps to like this setup. You might just prefer the command line to a GUI (Graphical User Interface). 
 
