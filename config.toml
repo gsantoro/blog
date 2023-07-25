@@ -94,7 +94,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   images = ["https://gsantoro.dev/images/avatar.png"]
 
   [params.donation]
-    enable = true
+    enable = false
 
     [params.donation.kofi]
       id = "gsantoro"
