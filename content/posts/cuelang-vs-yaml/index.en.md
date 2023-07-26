@@ -9,9 +9,9 @@ tags:
 categories:
 - DevOps
 description: Discover CUE language, a better alternative to YAML for Kubernetes manifests. Simplify configuration management and schema validation
-featuredImage: /images/pool-cue.jpg
-images: 
-- /images/pool-cue.jpg
+resources:
+- name: "featured-image"
+  src: "featured-image.jpg"
 ---
 <!--more-->
 <!--- subtitle --->

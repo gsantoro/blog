@@ -9,9 +9,9 @@ tags:
 categories:
 - Kubernetes
 description: Prepare effectively for the Certified Kubernetes Administrator (CKA) exam with recommended books in order of complexity
-featuredImage: /images/cka.jpg
-images:
-- /images/cka-study-guide.jpg
+resources:
+- name: "featured-image"
+  src: "featured-image.jpg"
 ---
 <!--more-->
 You just bought your [Certified Kubernetes Administrator exam](https://trainingportal.linuxfoundation.org/learn/course/certified-kubernetes-administrator-cka/exam/exam) and you don't know where to start?

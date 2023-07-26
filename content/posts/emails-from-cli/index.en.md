@@ -8,9 +8,9 @@ tags:
 categories:
 - DevOps
 description: Combine Resend Email API, Pop from Charm.sh, Taskfile, Envchain to send emails from the command line
-featuredImage: /images/emails-from-cli.jpg
-images: 
-- /images/emails-from-cli.jpg
+resources:
+- name: "featured-image"
+  src: "featured-image.jpg"
 ---
 <!--more-->
 
