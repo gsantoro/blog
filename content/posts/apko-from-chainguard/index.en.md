@@ -11,7 +11,7 @@ categories:
 description: Apko from Chainguard revolutionizes container image creation. Build compact, secure, and reproducible images with ease using simple YAML config
 resources:
 - name: "featured-image"
-  src: "featured-image.jpg"
+  src: "featured-image.webp"
 ---
 <!--more-->
 

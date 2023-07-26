@@ -11,7 +11,7 @@ categories:
 description: Discover CUE language, a better alternative to YAML for Kubernetes manifests. Simplify configuration management and schema validation
 resources:
 - name: "featured-image"
-  src: "featured-image.jpg"
+  src: "featured-image.webp"
 ---
 <!--more-->
 <!--- subtitle --->

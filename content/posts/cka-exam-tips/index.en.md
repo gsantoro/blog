@@ -11,7 +11,7 @@ categories:
 description: Get valuable tips for passing the Certified Kubernetes Administrator (CKA) exam. Prepare effectively with insights on exam rules and environment setup
 resources:
 - name: "featured-image"
-  src: "featured-image.jpg"
+  src: "featured-image.webp"
 ---
 <!--more-->
 

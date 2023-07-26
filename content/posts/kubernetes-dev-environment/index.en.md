@@ -12,7 +12,7 @@ categories:
 description: Discover Kubernetes development environments. Explore options like Docker Desktop, Minikube, Kind, K3s, K3d, and Rancher Desktop
 resources:
 - name: "featured-image"
-  src: "featured-image.jpeg"
+  src: "featured-image.webp"
 ---
 <!--more-->
 TL;DR: I recently uninstalled Docker Desktop entirely from my MacBook and replaced it with Rancher Desktop. 

@@ -11,7 +11,7 @@ categories:
 description: Discover node-shell, the powerful kubectl plugin that provides SSH-like access to Kubernetes nodes for infrastructure investigation
 resources:
 - name: "featured-image"
-  src: "featured-image.jpg"
+  src: "featured-image.webp"
 ---
 <!--more-->
 

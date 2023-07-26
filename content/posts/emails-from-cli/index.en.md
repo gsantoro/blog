@@ -10,7 +10,7 @@ categories:
 description: Combine Resend Email API, Pop from Charm.sh, Taskfile, Envchain to send emails from the command line
 resources:
 - name: "featured-image"
-  src: "featured-image.jpg"
+  src: "featured-image.webp"
 ---
 <!--more-->
 

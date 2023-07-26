@@ -11,7 +11,7 @@ categories:
 description: Securely store secrets on laptops with envchain. It provides encryption at rest and integration with laptop lock mechanisms
 resources:
 - name: "featured-image"
-  src: "featured-image.jpeg"
+  src: "featured-image.webp"
 ---
 <!--more-->
 
