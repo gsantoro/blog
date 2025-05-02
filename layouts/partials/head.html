@@ -26,7 +26,11 @@
   {{ with .Params.robots }}
   <meta name="robots" content="{{ . }}" />
   {{ end }}
-  <link rel="canonical" href="{{ .Permalink }}" />
+  {{ if .Params.canonicalUrl }}
+  <link rel="canonical" href="{{ .Params.canonicalUrl }}">
+  {{ else }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ end }}
   {{ range .AlternativeOutputFormats -}}
   {{ printf `
   <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink ($.Site.Title | emojify) |
@@ -104,6 +108,9 @@
   {{ with .Site.Params.verification.fediverse }}
   <meta name="fediverse:creator" content="{{ . }}" />
   {{ end }}
+  {{ with .Site.Params.verification.ahrefs }}
+  <meta name="ahrefs-site-verification" content="{{ . }}" />
+  {{ end }}
   {{/* Social */}}
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
@@ -135,8 +142,7 @@
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-  <script>
-
+  <script defer>
     const firebaseConfig = {
       apiKey: {{ $.Site.Params.firebase.apiKey }},
       authDomain: {{ $.Site.Params.firebase.apiKey }},
@@ -153,5 +159,8 @@
 
   </script>
   {{ end }}
+  {{ end }}
+  {{ with $.Site.Params.ads.adsense }}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>
   {{ end }}
 </head>
