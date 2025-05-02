@@ -1,0 +1,84 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task: dev
+
+  dev:
+    cmds:
+      # - hugo serve --disableFastRender --buildDrafts 
+      - hugo server
+
+  prod:
+    cmds:
+      - hugo serve --minify --disableLiveReload --disableFastRender -e production
+
+  publish:
+    cmds:
+      - hugo
+
+  build:
+    cmds:
+      - hugo
+
+  theme:
+    cmds:
+      # - git submodule add -f https://github.com/gsantoro/LoveIt.git themes/LoveIt
+      - pwd
+      - git submodule add https://github.com/nunocoracao/blowfish.git themes/blowfish
+      - mkdir -p config/_default/
+      - cp themes/blowfish/*.toml config/_default/
+
+  # theme:
+  #   cmds:
+  #     - mkdir -p config/_default/
+  #     - |
+  #       cat <<EOF > config/_default/module.toml
+  #       [[imports]]
+  #       path = "github.com/nunocoracao/blowfish/v2"
+  #       EOF
+  #     - task: tidy
+  #     - hugo mod get -u
+
+  open:
+    cmds:
+      - open http://localhost:1313/
+
+
+  create:
+    cmds:
+      - hugo new site . --force
+    status:
+      - test -f hugo.toml
+
+  init: 
+    cmds:
+      - hugo mod init github.com/{{.GITHUB_OWNER}}/{{.REPO_NAME}}
+    status:
+      - test -f go.mod
+
+
+  tidy:
+    cmds: 
+      - hugo mod tidy
+
+  up:
+    cmds:
+      - task: create
+      - task: init
+      - task: tidy
+    requires:
+      vars: 
+        - GITHUB_OWNER
+        - REPO_NAME
+
+
+  post:
+    cmds:
+      - hugo new content content/posts/{{.TIMESTAMP}}.md
+    vars:
+      TIMESTAMP:
+        sh: date +%Y%m%d%H%M%S
