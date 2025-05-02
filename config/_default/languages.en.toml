@@ -17,7 +17,7 @@ title = "Giuseppe Santoro's blog"
 [params.author]
   name = "Giuseppe Santoro"
   image = "avatar.webp"
-  headline = "Senior Software Engineer at Elastic (aka Elasticsearch)"
+  headline = "Senior Software Engineer"
 #   email = "youremail@example.com"
 #   image = "img/blowfish_logo.png"
 #   imageQuality = 96
