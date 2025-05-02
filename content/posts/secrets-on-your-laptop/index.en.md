@@ -89,7 +89,7 @@ Between the benefits we can find:
 
 For example, you could use envchain to store your AWS credentials and load them in memory as environment variables to be used by other tools like [aws-cli](https://github.com/aws/aws-cli) or other Infrastructure as Code tools. The only limitation here is the [maximum size of an environment variable at 32,760](https://devblogs.microsoft.com/oldnewthing/20100203-00/?p=15083). Given this limit is quite high, it should not be a problem for most of our use cases.
 
-{{<gist gsantoro 81058dae699a56686b008464b862195c>}}
+{{< gist gsantoro 81058dae699a56686b008464b862195c>}}
 
 While envchain supports both MacOS and Linux keychains, if you are only interested in securing your secrets on MacOS you can use MacOS keychain CLI via the `security` command. You can find more information at [Storing Secrets Using the MacOS Keychain CLI](https://www.aria.ai/blog/posts/storing-secrets-with-keychain.html).
 

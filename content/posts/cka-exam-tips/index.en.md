@@ -16,7 +16,9 @@ Tips and tricks to pass the [Certified Kubernetes Administrator exam](https://tr
 
 I recently passed my Certified Kubernetes Administrator exam and I would like to share with you some tips that might enable you to pass the exam.
 
-{{< tweet user="gsantoro15" id="1642572237327745027" >}}
+<!-- > This is my CKA exam certificate #CKA #Kubernetes pic.twitter.com/b9IWPcT5kB
+> 
+> — Giuseppe Santoro (@gsantoro15) April 2, 2023 -->
 
 ## Booking 
 - You need to allow 24h from when you schedule an exam to when the exam can take place. This includes any possible retakes. Keep that in mind if the expiration date is approaching.
@@ -48,7 +50,7 @@ I recently passed my Certified Kubernetes Administrator exam and I would like to
 	- Vim is already configured as above
 	- Kn and KX aliases are available at [cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) (which is part of the official documentation that you are allowed to browse)
 
-{{<gist gsantoro 05c6f586cc255155139043bb2e16d9df>}}
+{{< gist gsantoro 05c6f586cc255155139043bb2e16d9df>}}
 
 - When writing a manifest for a question use the file format `<question number>.<resource>.yaml` . For example `1.pod.yaml` to store a manifest for a pod for question number 1. This way you can leave a question partially answered and go back to it later. 
 - Before editing a manifest provided by the environment, `back it up` first with the file format `<question number>.manifest.yaml.bak` so that you can map the manifest to the question.
