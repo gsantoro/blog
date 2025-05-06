@@ -140,7 +140,7 @@ smartTOCHideUnfocusedChildren = true
   # domain = "llama.yoursite.com"
 
 [umamiAnalytics]
-  # websiteid = "ABC12345"
+  websiteid = "b92e56bf-66b3-4883-bbd0-33bf20a7dea8"
   # domain = "llama.yoursite.com"
   # dataDomains = "yoursite.com,yoursite2.com"
   # scriptName = ""
